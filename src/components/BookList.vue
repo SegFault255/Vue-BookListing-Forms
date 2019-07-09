@@ -3,7 +3,7 @@
     <h1>{{title}}</h1>
     <input v-model="searchInput" type="text" placeholder="Search Books" />
     <ul class="exists">
-      <book-item v-for="books in searchedBooks" :key="books.id" :book="books"></book-item>
+      <book-item v-for="book in searchedBooks" :key="book.id" :book="book"></book-item>
     </ul>
     <hr />
     <h2>Filtered Books by Ownership</h2>
